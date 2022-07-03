@@ -2,7 +2,7 @@ function greet2(person: string, date: Date) {
   console.log(`Hello ${person}, today is ${date.toLocaleDateString()}!`);
 }
 
-function sayHi(name: string): string {
+function sayHi3(name: string): string {
   return '张三';
 }
 
