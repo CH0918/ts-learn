@@ -12,7 +12,7 @@ type DescribableFunction = {
   // 函数类型定义
   (args: number): boolean;
 };
-function doSomething(fn: DescribableFunction) {
+function doSomething1(fn: DescribableFunction) {
   console.log(fn.description + ' returned' + fn(1));
 }
 
