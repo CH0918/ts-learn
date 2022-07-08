@@ -49,3 +49,7 @@ type app2 = typeof APP2[number];
 function getPhoto3(app: app2) {}
 // getPhoto3('xixi');// no ok
 getPhoto3('Tmall');
+
+interface II {}
+type tt = string[];
+let arr: tt = ['a', 'b'];
