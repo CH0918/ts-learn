@@ -44,4 +44,4 @@ type FirstCase = Capitalize<Greeting2>;
 // 第一个字符转为小写
 type greeting3 = 'Haha';
 type UnCapitalizeGreeting = Uncapitalize<greeting3>;
-//
+// 类
