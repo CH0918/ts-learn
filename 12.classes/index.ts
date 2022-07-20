@@ -235,3 +235,17 @@ class Box<Type> {
   }
 }
 const box = new Box('hello!');
+
+class Person {
+  protected print(name?: string) {}
+  // 加了访问权限修饰符，相当于在类中声明了成员属性
+  constructor(public name: string, public age: number) {}
+}
+class Son extends Person {
+  constructor() {
+    super('zhangsan', 20);
+    super.print();
+  }
+  override print(name: string) {}
+}
+const p = new Person('zhangsan', 20);
