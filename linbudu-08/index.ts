@@ -35,7 +35,7 @@ if (typeof strOrNumOrBool === 'string') {
 function isString(input: unknown): input is string {
   return typeof input === 'string';
 }
-function foo(input: string | number) {
+function foo111(input: string | number) {
   if (isString(input)) {
     input.replace('hdj', 'hahah');
   } else if (typeof input === 'number') {
@@ -64,13 +64,4 @@ interface Bar {
   bar: string;
   barOnly: boolean;
   shared: number;
-}
-function handle(input: Foo | Bar) {
-  if ('foo' in input) {
-    console.log(input.fooOnly);
-  } else if ('bar' in input) {
-    console.log(input.barOnly);
-  } else {
-    // never
-  }
 }
